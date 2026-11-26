@@ -1,0 +1,29 @@
+GitRepos - Freeware License
+
+Copyright (c) 2026 sergiokapone. All rights reserved.
+
+GitRepos (the files GitRepos.wfx and GitRepos.wfx64, their documentation and the example
+settings file) is FREEWARE. The source code is not published.
+
+You MAY:
+  - use GitRepos free of charge, for private, educational and commercial purposes,
+    on any number of computers;
+  - copy and distribute the original, unmodified archive (GitRepos-x.y.zip) free of
+    charge, provided that this license file stays in it. Putting it on software
+    archives, mirrors and plugin collections is welcome.
+
+You MAY NOT:
+  - sell GitRepos or charge for its distribution (a reasonable media or download fee
+    of a software archive is fine);
+  - modify, decompile, disassemble, reverse engineer or otherwise try to extract the
+    source code of GitRepos, or remove or change its copyright notices;
+  - present GitRepos as your own work.
+
+NO WARRANTY. GitRepos is provided "AS IS", without warranty of any kind, express or
+implied, including but not limited to merchantability, fitness for a particular purpose
+and non-infringement. The author is not liable for any damage or loss of data arising
+from the use of, or the inability to use, GitRepos. You use it at your own risk.
+
+The author keeps all rights not expressly granted here.
+
+Bugs and questions: https://github.com/sergiokapone/tc-gitrepos

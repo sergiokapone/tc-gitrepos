@@ -1,0 +1,28 @@
+; GitRepos.ini - put next to GitRepos.wfx64 (all keys are optional; the defaults are shown)
+[GitRepos]
+; folders searched for git repositories (";"-separated, %VARS% allowed); default: <drive of Total Commander>\Projects
+;Roots=D:\Projects;E:\Work
+; how deep to look inside Roots
+Depth=5
+; extra repositories outside Roots (";"-separated)
+Repos=
+; also take the repositories listed in gitview.json (the older gitview plugin), 0 = no
+ImportGitview=1
+; path to git.exe; empty = from PATH, then "Program Files\Git\cmd\git.exe"
+Git=
+; GitHub token for releases (more requests per hour, private repositories); empty = the GitHub CLI login ("gh auth token") when UseGhToken=1
+Token=
+UseGhToken=1
+; how many commits the "Commits" folder shows, how many releases are asked from GitHub
+Commits=300
+Releases=50
+; "Source code.zip" in every release folder
+SourceZip=1
+; own default columns (Branch, Status, Last commit) for the file system, 0 = Total Commander's usual columns
+DefaultColumns=1
+; parallel git processes when the root is listed (0 = number of CPUs, at most 8)
+Threads=0
+; light / dark / auto (= Total Commander's DarkMode) for the "Commit and Push" window
+Theme=auto
+; uk / ru / en / auto (= Total Commander's language)
+Language=auto
