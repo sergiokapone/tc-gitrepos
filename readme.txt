@@ -1,13 +1,17 @@
-GitRepos 1.0 - git repositories in Total Commander (file system plugin, 32 and 64 bit)
-=====================================================================================
+GitRepos 1.1 - git repositories in Total Commander (file system + Lister plugin, 32 and 64 bit)
+==============================================================================================
 
 GitRepos shows all your git repositories as one virtual folder in Network Neighborhood
 ("Git repositories"): their state at a glance, branches, tags, GitHub releases, commits
-and uncommitted changes, plus a window to commit, pull and push.
+and uncommitted changes, an overview of each repository, plus a window to commit, pull
+and push. The same DLL is also a Lister plugin that shows .patch / .diff files in colour.
 
 INSTALLATION
-  Open GitRepos-1.0.zip in Total Commander and confirm. Then: Network Neighborhood
+  Open GitRepos-1.1.zip in Total Commander and confirm. Then: Network Neighborhood
   (\\\ in the command line) -> "Git repositories".
+  Recommended: also open GitRepos-Lister-1.1.zip and confirm (the patch viewer). If another
+  viewer takes .patch files first, move GitRepos up in Configuration > Options > Plugins >
+  Lister plugins > Configure.
   Needs Git for Windows (git.exe in PATH, or Git= in the ini). Optional: the GitHub CLI
   logged in ("gh auth login") for private releases and more GitHub requests per hour.
 
@@ -27,6 +31,9 @@ INSIDE A REPOSITORY
   Changes         uncommitted files; F3 = the diff, Enter = the commit window
   -> Working folder        Enter goes to the real folder
   Commit and Push...       Enter opens the commit window; F3 = git status
+  (i) Overview             F3/Enter: state, history, activity per week, authors, file types,
+                           most changed files, recent commits (the root has one for all
+                           repositories: which need attention, all by last commit)
 
   Names show "/" as U+2215 and ":" as U+A789 (Windows does not allow them in file names).
 
@@ -38,6 +45,13 @@ COMMIT AND PUSH WINDOW (theme and language of Total Commander)
   - Right click on a file: open, show in folder, copy path, check/uncheck all, add to .gitignore.
   - Esc closes, F5 refreshes. Nothing is ever deleted or reverted.
 
+PATCH VIEWER (Lister plugin: .patch, .diff, .rej and the overviews)
+  - A card per commit (subject, author, dates, hash, message) and a table of its files with
+    +added -removed and a bar; click a row to jump to the file.
+  - Every file with a banner (status, rename, mode); hunks with old/new line numbers; added
+    and removed lines tinted, the changed words inside a line marked.
+  - ] / [ next / previous file, L line numbers, W wrap, Ctrl+C, Ctrl+A, F7 search.
+
 KEYS
   Alt+Enter   open the item on GitHub (repository, branch, file, commit, release);
               without GitHub: go to the working folder
@@ -46,7 +60,9 @@ KEYS
 
 SETTINGS  (copy GitRepos.ini.example to GitRepos.ini next to the plugin; all keys optional)
   Roots, Depth, Repos, ImportGitview (repositories of the gitview plugin's gitview.json),
-  Git, Token, UseGhToken, Commits, Releases, SourceZip, DefaultColumns, Threads, Theme, Language.
+  Git, Token, UseGhToken, Commits, Releases, SourceZip, DefaultColumns, Threads, Overview, Theme,
+  Language; [View] LineNumbers, Wrap, FontSize for the patch viewer (its ini is the one next to
+  GitRepos.wlx64).
   Every key is explained in GitRepos.ini.example.
 
 SAFETY AND PRIVACY

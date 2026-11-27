@@ -22,7 +22,15 @@ SourceZip=1
 DefaultColumns=1
 ; parallel git processes when the root is listed (0 = number of CPUs, at most 8)
 Threads=0
-; light / dark / auto (= Total Commander's DarkMode) for the "Commit and Push" window
+; "ⓘ Overview" in the root and in every repository, 0 = no
+Overview=1
+; light / dark / auto (= Total Commander's DarkMode) for the "Commit and Push" window and the patch viewer
 Theme=auto
 ; uk / ru / en / auto (= Total Commander's language)
 Language=auto
+
+; the patch viewer (Lister part; it reads the GitRepos.ini next to GitRepos.wlx64). L and W switch these and remember them.
+[View]
+LineNumbers=1
+Wrap=0
+FontSize=10
